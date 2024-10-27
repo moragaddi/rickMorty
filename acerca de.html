@@ -1,0 +1,140 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+     
+     <title>doc</title>
+     <link rel="stylesheet" href="estilos.css">
+ </head>
+ <body>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" style="font-family: 'Creepster', cursive; font-size: 35px;color: #00B3CB; margin-right: -120px;" href="index.html">Rick y Morty</a>
+  <button class="navbar-toggler text-warning bg-info" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown"style="margin-top: 20px;" >
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link"style="font-family: 'Creepster', cursive; font-size: 35px;color: #00B3CB; margin-right: 45px;" href="acerca de.html">ACERCA DE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: 'Creepster', cursive; font-size: 35px;color: #00B3CB; margin-right: 45px;" href="personajes.html">PERSONAJES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: 'Creepster', cursive; font-size: 35px;color: #00B3CB; margin-right: 45px;" href="reseñas.html">RESEÑA</a>
+      </li>
+</header>
+
+   
+            <video src="tierra.mp4" autoplay loop>   
+            </video>
+
+            <center>
+                <div class="logo">
+                <img src="Layer 1 (2).png">
+            </div>
+            </center>
+
+            <div class="section">
+              <div class="container2">
+                <div class="content-section">
+                  <div class="title">
+                    <h1>About Us</h1>
+                  </div>
+                  <div class="content">
+                    <h3>De que trata la serie?</h3>
+                    <p>Las surrealistas aventuras interdimensionales de un genio científico alcohólico y su nervioso nieto de gran corazón pero con ansiedad crónica no sólo nos proporcionan un entretenimiento de gran calidad, sino que ofrecen una evidente deconstrucción de la sitcom clásica, con un humor crítico e irreverente que no evita meter el dedo en la llaga en los asuntos más candentes, incómodos e hirientes de la sociedad "moderna" en que vivimos. Te proponemos un divertido (y desvergonzado) repaso por la historia de la serie, sus curiosidades más locas y aspectos que tal vez desconocías. Ah, y si tienes la poca vergüenza de no haber visto aún la serie...¡hazte el favor de tragártela lo antes posible y regresa cuanto antes para leer este artículo! Muevete y no pierdas el tiempo...¡el multiverso te espera!
+            </p>
+                    <div class="button">
+                      <a href="https://es.wikipedia.org/wiki/Rick_y_Morty">Read More</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+       
+    
+      
+     
+     
+
+
+
+<div class="slider-">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="slider1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider4.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider3.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slider4.jpeg" alt="">
+            </div>
+            
+        </div>
+    </div>
+      
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+function showDivs(n) {
+var i;
+// acá define qué elemento entra en el slider
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length} ;
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+ 
+carousel();
+ 
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > x.length) {slideIndex = 1}
+x[slideIndex-1].style.display = "block";
+setTimeout(carousel, 3000); // Cambia la imagen cada 3 segundos
+}
+</script>
+ 
+
+
+
+</body>
+</html>
